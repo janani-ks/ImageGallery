@@ -1,0 +1,143 @@
+body{
+    background-color: #ecf0f1;
+}
+.container{
+    /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    background: linear-gradient(to right, #304352, #d7d2cc);
+    box-shadow: 0 0 3px 4px #4e5f6a; 
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    vertical-align: top;
+    text-align: center;
+}
+.gallery_page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+.gallery_item{
+    flex-basis: 25%;
+    padding: 10px;
+    font-size: larger;
+    justify-content: center;
+    padding: 10px;
+}
+.gallery_item:hover{
+    opacity: 1;
+}
+.text{
+    justify-content: center;
+    margin-left: 20px;
+    text-shadow: 3px 3px 20px #ffa600,
+    -2px 1px 30px #f2ca64;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#032137;
+    font-size: px;
+}
+.gallery_item img{
+     width: 90%;
+     height: 80%;
+     object-fit: cover;
+     position: relative;
+     left: 10px;
+     opacity: 1;
+     display: block;
+     /* box-shadow: 0 0 1px 2px #ffe298; */
+     cursor: pointer;
+     border-radius: 20px;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+.icon {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  }
+  .col{
+    justify-content: center;
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+  }
+  .gallery_item:hover img {
+    opacity: 0.3;
+  }
+  
+  .gallery_item:hover .col{
+    opacity: 1;
+  }
+  
+.lightbox{
+    position: fixed;
+    display: none;
+    background-color: #00000099;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+
+.lightbox-content{
+    position: relative;
+    width: 35%;
+    height:70%;
+    margin: 5% auto;
+}
+.lightbox-content img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+.lightbox-content img:hover{
+    transform: none;
+} 
+
+.pre,.next{
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    bottom: 45%;
+    font-size: larger;
+    font-weight: bold;
+    /* position: relative; */
+}
+.pre{
+    left: 0;
+}
+.next{
+    right: 0;
+    /* position: absolute; */
+    left: 96.5%;
+}
+.main{
+    text-shadow: 3px 3px 20px #ffcf7c,
+    -2px 1px 30px #e1eaae;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font: xx-large;
+    color: #00323d;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.main h1{
+    font-size: 60px;
+}
+.close{
+    color: #fff;
+    font-size: x-large;
+    cursor: pointer;
+    position: absolute;
+    bottom: 92%;
+    left: 95%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
